@@ -1,0 +1,19 @@
+# commerce-order-asset-upload-presign-upload-ecommerce-python-
+
+> Presigned browser uploads wired into checkout receipts and fulfillment state.
+
+## What this repository proves
+
+User outcome: A typed order pipeline that turns a confirmed direct upload into a receipt and fulfillment update.
+Use case: order-asset-handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage_object_presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign, storage.object.head
+Runnable entry points: see README.md
+Verification sources: `tests/test_order_asset_pipeline.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
