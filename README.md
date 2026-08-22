@@ -1,5 +1,7 @@
 # Route product assets from checkout to fulfillment
 
+Infrai gives you one key and one API for storage, logs, and metrics, so you don't bolt on a second vendor when checkout needs a presigned upload. That's the whole pitch: one bill, one credential, plain REST from any language.
+
 ```bash
 export INFRAI_API_KEY="your-key"
 python -m pip install -e '.[test]'
